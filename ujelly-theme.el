@@ -30,7 +30,7 @@
 
       (custom-theme-set-faces
        'ujelly
-       `(default ((,class (:foreground ,ujelly-fg))))
+       `(default ((,class (:foreground ,ujelly-fg :background ,ujelly-bg))))
        `(compilation-error ((,class (:foreground ,ujelly-red-0))))
        `(compilation-info ((,class (:foreground ,ujelly-yellow-0))))
        `(compilation-line-number ((,class (:foreground ,ujelly-grey-0))))
@@ -77,14 +77,15 @@
        `(helm-selection ((,class (:background ,ujelly-purple-1))))
        `(helm-source-header ((,class (:foreground ,ujelly-red-1 :background ,ujelly-grey-3))))
        `(hl-line ((,class (:background ,ujelly-grey-3))))
-       `(isearch ((,class (:inverse-video t))))
+       `(isearch ((,class (:inverse-video nil))))
        `(isearch-fail ((,class (:background ,ujelly-red-1))))
        `(ido-first-match ((,class (:foreground ,ujelly-yellow-0))))
        `(ido-only-match ((,class (:foreground ,ujelly-green-0))))
        `(ido-subdir ((,class (:foreground ,ujelly-fg))))
        `(ido-virtual ((,class (:foreground ,ujelly-purple-0))))
        `(lazy-highlight ((,class (:foreground nil))))
-       `(linum ((,class (:slant italic :foreground ,ujelly-grey-2))))
+       `(fringe ((,class (:foreground ,ujelly-grey-1 :background ,ujelly-bg))))
+       `(linum ((,class (:slant italic :foreground ,ujelly-grey-1 :background ,ujelly-bg))))
        `(magit-branch ((,class (:foreground ,ujelly-red-2))))
        `(magit-diff-add ((,class (:foreground ,ujelly-green-0 :background ,ujelly-bg))))
        `(magit-diff-del ((,class (:foreground ,ujelly-red-0 :background ,ujelly-bg))))
